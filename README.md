@@ -1,16 +1,6 @@
 <div align="center">
 
-# SABRI WALID
-
-### NETWORKS · CLOUD · CYBERSECURITY
-
-**Building secure systems. Exploring intelligent cybersecurity.**
-
-[![GitHub](https://img.shields.io/badge/GitHub-waalidcyber-0D1117?style=for-the-badge&logo=github&logoColor=F0F6FC)](https://github.com/waalidcyber)
-[![Networks](https://img.shields.io/badge/Networks-2563EB?style=for-the-badge)](https://github.com/waalidcyber)
-[![Cloud](https://img.shields.io/badge/Cloud-06B6D4?style=for-the-badge)](https://github.com/waalidcyber)
-[![Cybersecurity](https://img.shields.io/badge/Cybersecurity-22C55E?style=for-the-badge)](https://github.com/waalidcyber)
-[![AI](https://img.shields.io/badge/AI%20%2F%20ML-8B5CF6?style=for-the-badge)](https://github.com/waalidcyber)
+<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/banner.svg" alt="SABRI WALID — Networks, Cloud & Cybersecurity" width="100%"/>
 
 </div>
 
@@ -28,14 +18,14 @@ My objective is to develop practical skills through academic projects, technical
 
 ## TECHNICAL AREAS
 
-| Domain | Main topics | Color |
-|---|---|---|
-| **Network Engineering** | TCP/IP, network architecture, routing, switching | ![](https://img.shields.io/badge/-2563EB-2563EB?style=flat-square) |
-| **Cybersecurity** | Threat detection, security monitoring, network defense | ![](https://img.shields.io/badge/-22C55E-22C55E?style=flat-square) |
-| **Cloud & Systems** | Linux administration, virtualization, infrastructure | ![](https://img.shields.io/badge/-06B6D4-06B6D4?style=flat-square) |
-| **Artificial Intelligence** | Anomaly detection, machine learning | ![](https://img.shields.io/badge/-8B5CF6-8B5CF6?style=flat-square) |
-| **Development** | Python, PHP, Java, SQL, Flask | ![](https://img.shields.io/badge/-F0883E-F0883E?style=flat-square) |
-| **Tools** | Git, GitHub, Linux, VirtualBox, Nmap | ![](https://img.shields.io/badge/-58A6FF-58A6FF?style=flat-square) |
+| Domain | Main topics |
+|---|---|
+| **Network Engineering** | TCP/IP, network architecture, routing, switching |
+| **Cybersecurity** | Threat detection, security monitoring, network defense |
+| **Cloud & Systems** | Linux administration, virtualization, infrastructure |
+| **Artificial Intelligence** | Anomaly detection, machine learning |
+| **Development** | Python, PHP, Java, SQL, Flask |
+| **Tools** | Git, GitHub, Linux, VirtualBox, Nmap |
 
 ---
 
@@ -101,22 +91,70 @@ A web application project using modern frontend and backend technologies.
 
 ## NETWORK & SECURITY ARCHITECTURE
 
-```mermaid
-flowchart TD
-    I[Internet] --> F[Firewall]
-    F --> N[Internal Network]
-    N --> S[Servers]
-    N --> L[Log Collection]
-    L --> M[Security Monitoring]
-    M --> A[Alert Analysis]
-    A --> R[Incident Response]
-    R -->|Feedback| M
+<div align="center">
 
-    style I fill:#58A6FF,stroke:#58A6FF,color:#0D1117
-    style F fill:#F0883E,stroke:#F0883E,color:#0D1117
-    style N fill:#2563EB,stroke:#2563EB,color:#F0F6FC
-    style S fill:#2563EB,stroke:#2563EB,color:#F0F6FC
-    style L fill:#06B6D4,stroke:#06B6D4,color:#0D1117
-    style M fill:#06B6D4,stroke:#06B6D4,color:#0D1117
-    style A fill:#22C55E,stroke:#22C55E,color:#0D1117
-    style R fill:#8B5CF6,stroke:#8B5CF6,color:#F0F6FC
+<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/network-architecture.svg" alt="Network and security architecture" width="100%"/>
+
+</div>
+
+---
+
+## SECURITY & AI PIPELINE
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/security-ai-pipeline.svg" alt="Security and AI detection pipeline" width="100%"/>
+
+</div>
+
+---
+
+## MONITORING WORKFLOW
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/monitoring-workflow.svg" alt="Monitoring and incident response workflow" width="100%"/>
+
+</div>
+
+---
+
+## TECHNOLOGIES
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=flat-square&logo=virtualbox&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
+
+</div>
+
+---
+
+## CURRENT OBJECTIVES
+
+- Strengthen practical cybersecurity and network administration skills.
+- Develop secure cloud and Linux infrastructure.
+- Improve Python and machine-learning implementation skills.
+- Document academic projects with reproducible steps and technical explanations.
+- Build a professional portfolio for cybersecurity opportunities.
+
+---
+
+<div align="center">
+
+**SABRI WALID**
+
+*Networks · Cloud · Cybersecurity*
+
+[GitHub Profile](https://github.com/waalidcyber)
+
+</div>
