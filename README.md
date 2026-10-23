@@ -1,160 +1,87 @@
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="SABRI WALID — Networks, Cloud and Cybersecurity">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="50%" stop-color="#141B2D"/>
+      <stop offset="100%" stop-color="#1C2128"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="30%" stop-color="#06B6D4"/>
+      <stop offset="60%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="25%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#22C55E"/>
+      <stop offset="75%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F0F6FC"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363D" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <rect width="1200" height="280" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1200" height="5" fill="url(#barGrad)"/>
 
-<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/banner.svg" alt="SABRI WALID — Networks, Cloud & Cybersecurity" width="100%"/>
+  <g>
+    <circle cx="1050" cy="50" r="5" fill="#2563EB"/>
+    <circle cx="1130" cy="90" r="4" fill="#06B6D4"/>
+    <circle cx="1090" cy="150" r="4" fill="#8B5CF6"/>
+    <circle cx="1160" cy="190" r="3" fill="#22C55E"/>
+    <line x1="1050" y1="50" x2="1130" y2="90" stroke="#2563EB" stroke-width="1" opacity="0.5"/>
+    <line x1="1130" y1="90" x2="1090" y2="150" stroke="#06B6D4" stroke-width="1" opacity="0.5"/>
+    <line x1="1090" y1="150" x2="1160" y2="190" stroke="#8B5CF6" stroke-width="1" opacity="0.5"/>
+  </g>
 
-</div>
+  <g transform="translate(48, 50)">
+    <rect width="150" height="180" rx="16" fill="#0D1117" stroke="url(#barGrad)" stroke-width="3"/>
+    <text x="75" y="120" text-anchor="middle" font-family="ui-monospace, monospace" font-size="78" font-weight="900" fill="url(#nameGrad)">W</text>
+    <circle cx="130" cy="28" r="6" fill="#22C55E"/>
+  </g>
 
----
+  <text x="230" y="100" font-family="ui-monospace, monospace" font-size="56" font-weight="900" fill="url(#nameGrad)" letter-spacing="4" filter="url(#glow)">SABRI WALID</text>
+  <rect x="232" y="118" width="420" height="3" rx="1.5" fill="url(#barGrad)"/>
+  <text x="232" y="152" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#06B6D4">Networks · Cloud · Cybersecurity</text>
+  <text x="232" y="180" font-family="ui-monospace, monospace" font-size="12" fill="#F0F6FC">Bachelor in Networks, Cybersecurity &amp; Cloud — ESTK, Cadi Ayyad University</text>
+  <text x="232" y="202" font-family="ui-monospace, monospace" font-size="11" fill="#8B949E">Network Security · Threat Detection · Data Analysis · AI</text>
 
-## PROFILE
+  <g transform="translate(232, 218)">
+    <rect x="0" y="0" width="105" height="24" rx="12" fill="#161B22" stroke="#2563EB" stroke-width="1.5"/>
+    <text x="52" y="17" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#2563EB">Networks</text>
+    <rect x="115" y="0" width="105" height="24" rx="12" fill="#161B22" stroke="#06B6D4" stroke-width="1.5"/>
+    <text x="167" y="17" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#06B6D4">Cloud</text>
+    <rect x="230" y="0" width="125" height="24" rx="12" fill="#161B22" stroke="#22C55E" stroke-width="1.5"/>
+    <text x="292" y="17" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#22C55E">Cybersecurity</text>
+    <rect x="365" y="0" width="105" height="24" rx="12" fill="#161B22" stroke="#8B5CF6" stroke-width="1.5"/>
+    <text x="417" y="17" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" font-weight="700" fill="#8B5CF6">AI / ML</text>
+  </g>
 
-Student in **Bachelor Réseaux, Cloud & Cybersécurité** at École Supérieure de Technologie d'El Kelâa des Sraghna, Université Cadi Ayyad, Morocco.
-
-Interested in network security, cloud infrastructure, Linux administration, machine learning applied to cybersecurity, and secure application development.
-
-My objective is to develop practical skills through academic projects, technical experiments, and documented implementations.
-
----
-
-## TECHNICAL AREAS
-
-| Domain | Main topics |
-|---|---|
-| **Network Engineering** | TCP/IP, network architecture, routing, switching |
-| **Cybersecurity** | Threat detection, security monitoring, network defense |
-| **Cloud & Systems** | Linux administration, virtualization, infrastructure |
-| **Artificial Intelligence** | Anomaly detection, machine learning |
-| **Development** | Python, PHP, Java, SQL, Flask |
-| **Tools** | Git, GitHub, Linux, VirtualBox, Nmap |
-
----
-
-## PROJECTS
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 01 — Banque Unity & CyberShield AI
-
-![Financial Security](https://img.shields.io/badge/Financial%20Security-2563EB?style=flat-square)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-8B5CF6?style=flat-square)
-![Web Dashboard](https://img.shields.io/badge/Web%20Dashboard-06B6D4?style=flat-square)
-
-A cybersecurity project combining a web dashboard and machine-learning techniques to explore suspicious activity and anomaly detection.
-
-- Flask REST API and PHP dashboard.
-- ML approaches: Isolation Forest, One-Class SVM, Autoencoder, Local Outlier Factor.
-- Scenarios: DDoS, brute-force, SQL injection, suspicious financial activity.
-
-[**Repository →**](https://github.com/waalidcyber/banque-unity-cybershield-aiv1)
-
-</td>
-<td width="50%" valign="top">
-
-### 02 — NeuroSecure
-
-![Application Security](https://img.shields.io/badge/Application%20Security-22C55E?style=flat-square)
-![Intelligent Detection](https://img.shields.io/badge/Intelligent%20Detection-8B5CF6?style=flat-square)
-
-A security-oriented application project involving web technologies, database integration and machine-learning experimentation.
-
-- Flask and MySQL.
-- Web security, detection mechanisms and authentication.
-- Results to be interpreted according to the actual test environment.
-
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-
-### 03 — Khouribga Portal
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-
-A web application project using modern frontend and backend technologies.
-
-- React frontend, Express backend.
-- PostgreSQL database with Prisma ORM.
-- French and Arabic interface considerations.
-
-*Repository link will be added when publicly available.*
-
-</td>
-</tr>
-</table>
-
----
-
-## NETWORK & SECURITY ARCHITECTURE
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/network-architecture.svg" alt="Network and security architecture" width="100%"/>
-
-</div>
-
----
-
-## SECURITY & AI PIPELINE
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/security-ai-pipeline.svg" alt="Security and AI detection pipeline" width="100%"/>
-
-</div>
-
----
-
-## MONITORING WORKFLOW
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/waalidcyber/waalidcyber/main/assets/monitoring-workflow.svg" alt="Monitoring and incident response workflow" width="100%"/>
-
-</div>
-
----
-
-## TECHNOLOGIES
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=flat-square&logo=virtualbox&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
-
-</div>
-
----
-
-## CURRENT OBJECTIVES
-
-- Strengthen practical cybersecurity and network administration skills.
-- Develop secure cloud and Linux infrastructure.
-- Improve Python and machine-learning implementation skills.
-- Document academic projects with reproducible steps and technical explanations.
-- Build a professional portfolio for cybersecurity opportunities.
-
----
-
-<div align="center">
-
-**SABRI WALID**
-
-*Networks · Cloud · Cybersecurity*
-
-[GitHub Profile](https://github.com/waalidcyber)
-
-</div>
+  <g transform="translate(850, 46)">
+    <rect width="310" height="188" rx="14" fill="#161B22" stroke="url(#barGrad)" stroke-width="2.5"/>
+    <rect x="0" y="0" width="8" height="188" rx="4" fill="url(#barGrad)"/>
+    <text x="24" y="28" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#22C55E" letter-spacing="1.5">IDENTITY CARD</text>
+    <line x1="24" y1="38" x2="290" y2="38" stroke="#30363D" stroke-width="1"/>
+    <circle cx="32" cy="58" r="4" fill="#2563EB"/>
+    <text x="44" y="56" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Program</text>
+    <text x="44" y="72" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0F6FC">Bachelor Networks &amp; Cyber</text>
+    <circle cx="32" cy="94" r="4" fill="#8B5CF6"/>
+    <text x="44" y="92" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Specialty</text>
+    <text x="44" y="108" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0F6FC">Network Security · AI</text>
+    <circle cx="32" cy="130" r="4" fill="#22C55E"/>
+    <text x="44" y="128" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Degree</text>
+    <text x="44" y="144" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#22C55E">DUT — Honours</text>
+    <circle cx="32" cy="166" r="4" fill="#F0F6FC"/>
+    <text x="44" y="164" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Status</text>
+    <text x="44" y="178" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0F6FC">Ongoing · Internship sought</text>
+  </g>
+</svg>
