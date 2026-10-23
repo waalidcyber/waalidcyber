@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Network and security architecture">
+  <defs>
+    <linearGradient id="arBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="zoneExt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="zoneDmz" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0883E" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#F0883E" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="zoneInt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.02"/>
+    </linearGradient>
+    <marker id="arArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8B949E"/>
+    </marker>
+    <marker id="arArrowG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22C55E"/>
+    </marker>
+    <pattern id="arGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#30363D" stroke-width="0.5" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="480" fill="url(#arBg)" rx="14" stroke="#30363D"/>
+  <rect width="1200" height="480" fill="url(#arGrid)" rx="14"/>
+
+  <rect x="20" y="50" width="360" height="180" rx="12" fill="url(#zoneExt)" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="20" y="50" width="150" height="28" rx="6" fill="#06B6D4"/>
+  <text x="32" y="69" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#0D1117" letter-spacing="1">EXTERNAL ZONE</text>
+
+  <rect x="40" y="95" width="150" height="110" rx="10" fill="#1C2128" stroke="#06B6D4" stroke-width="2"/>
+  <rect x="40" y="95" width="150" height="30" rx="10" fill="#06B6D4" fill-opacity="0.3"/>
+  <circle cx="58" cy="110" r="6" fill="#06B6D4"/>
+  <text x="72" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#06B6D4">Internet</text>
+  <text x="54" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">WAN · Cloud</text>
+  <text x="54" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Inbound traffic</text>
+  <text x="54" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Exposed services</text>
+
+  <rect x="210" y="95" width="150" height="110" rx="10" fill="#1C2128" stroke="#58A6FF" stroke-width="2"/>
+  <rect x="210" y="95" width="150" height="30" rx="10" fill="#58A6FF" fill-opacity="0.3"/>
+  <circle cx="228" cy="110" r="6" fill="#58A6FF"/>
+  <text x="242" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#58A6FF">Clients</text>
+  <text x="224" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Workstations</text>
+  <text x="224" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Remote access</text>
+  <text x="224" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Endpoints</text>
+
+  <line x1="190" y1="150" x2="205" y2="150" stroke="#8B949E" stroke-width="2.5" marker-end="url(#arArrow)"/>
+
+  <rect x="420" y="50" width="340" height="180" rx="12" fill="url(#zoneDmz)" stroke="#F0883E" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="420" y="50" width="100" height="28" rx="6" fill="#F0883E"/>
+  <text x="432" y="69" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#0D1117" letter-spacing="1">DMZ ZONE</text>
+
+  <rect x="440" y="95" width="140" height="110" rx="10" fill="#1C2128" stroke="#F0883E" stroke-width="2"/>
+  <rect x="440" y="95" width="140" height="30" rx="10" fill="#F0883E" fill-opacity="0.3"/>
+  <circle cx="458" cy="110" r="6" fill="#F0883E"/>
+  <text x="472" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#F0883E">Firewall</text>
+  <text x="454" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Filtering</text>
+  <text x="454" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Rules · NAT</text>
+  <text x="454" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Access control</text>
+
+  <rect x="600" y="95" width="140" height="110" rx="10" fill="#1C2128" stroke="#F0883E" stroke-width="2"/>
+  <rect x="600" y="95" width="140" height="30" rx="10" fill="#F0883E" fill-opacity="0.3"/>
+  <circle cx="618" cy="110" r="6" fill="#F0883E"/>
+  <text x="632" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#F0883E">WAF</text>
+  <text x="614" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Web protection</text>
+  <text x="614" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">SQLi · XSS</text>
+  <text x="614" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">HTTP filtering</text>
+
+  <line x1="400" y1="150" x2="435" y2="150" stroke="#F0883E" stroke-width="2.5" marker-end="url(#arArrow)"/>
+  <line x1="585" y1="150" x2="595" y2="150" stroke="#F0883E" stroke-width="2.5" marker-end="url(#arArrow)"/>
+
+  <rect x="800" y="50" width="380" height="180" rx="12" fill="url(#zoneInt)" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="800" y="50" width="130" height="28" rx="6" fill="#2563EB"/>
+  <text x="812" y="69" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#F0F6FC" letter-spacing="1">INTERNAL ZONE</text>
+
+  <rect x="820" y="95" width="160" height="110" rx="10" fill="#1C2128" stroke="#2563EB" stroke-width="2"/>
+  <rect x="820" y="95" width="160" height="30" rx="10" fill="#2563EB" fill-opacity="0.3"/>
+  <circle cx="838" cy="110" r="6" fill="#2563EB"/>
+  <text x="852" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#2563EB">Internal Network</text>
+  <text x="834" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Switch · Router</text>
+  <text x="834" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">VLAN · Segmentation</text>
+  <text x="834" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Servers · Apps</text>
+
+  <rect x="1000" y="95" width="160" height="110" rx="10" fill="#1C2128" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="1000" y="95" width="160" height="30" rx="10" fill="#8B5CF6" fill-opacity="0.3"/>
+  <circle cx="1018" cy="110" r="6" fill="#8B5CF6"/>
+  <text x="1032" y="114" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#8B5CF6">IDS / IPS</text>
+  <text x="1014" y="142" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Intrusion detection</text>
+  <text x="1014" y="162" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Signatures · Anomalies</text>
+  <text x="1014" y="180" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Blocking · Alerts</text>
+
+  <line x1="780" y1="150" x2="815" y2="150" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arArrow)"/>
+  <line x1="985" y1="150" x2="995" y2="150" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arArrow)"/>
+
+  <rect x="20" y="260" width="1160" height="70" rx="12" fill="#1C2128" stroke="#06B6D4" stroke-width="2.5"/>
+  <rect x="20" y="260" width="1160" height="70" rx="12" fill="#06B6D4" fill-opacity="0.12"/>
+  <circle cx="52" cy="295" r="10" fill="#06B6D4"/>
+  <text x="52" y="300" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#0D1117">↻</text>
+  <text x="74" y="290" font-family="ui-monospace, monospace" font-size="13" font-weight="900" fill="#06B6D4">Log &amp; Event Collection</text>
+  <text x="74" y="310" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Centralized telemetry — Logs · Metrics · Traces · Network events</text>
+  <rect x="1050" y="278" width="110" height="34" rx="8" fill="#0D1117" stroke="#06B6D4" stroke-width="1.5"/>
+  <text x="1105" y="300" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#06B6D4">CENTRAL</text>
+
+  <line x1="115" y1="235" x2="115" y2="255" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arArrow)"/>
+  <line x1="510" y1="235" x2="510" y2="255" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arArrow)"/>
+  <line x1="670" y1="235" x2="670" y2="255" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arArrow)"/>
+  <line x1="900" y1="235" x2="900" y2="255" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arArrow)"/>
+  <line x1="1080" y1="235" x2="1080" y2="255" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arArrow)"/>
+
+  <rect x="20" y="355" width="1160" height="100" rx="12" fill="#1C2128" stroke="#22C55E" stroke-width="2.5"/>
+  <rect x="20" y="355" width="1160" height="100" rx="12" fill="#22C55E" fill-opacity="0.10"/>
+  <rect x="20" y="355" width="220" height="32" rx="10" fill="#22C55E"/>
+  <text x="36" y="376" font-family="ui-monospace, monospace" font-size="12" font-weight="900" fill="#0D1117">SIEM &amp; MONITORING</text>
+  <line x1="40" y1="400" x2="1160" y2="400" stroke="#30363D" stroke-width="1"/>
+  <circle cx="46" cy="422" r="4" fill="#22C55E"/>
+  <text x="58" y="426" font-family="ui-monospace, monospace" font-size="11" fill="#F0F6FC">Event correlation · Behavioural detection · AI · Dashboards</text>
+  <circle cx="46" cy="442" r="4" fill="#8B5CF6"/>
+  <text x="58" y="446" font-family="ui-monospace, monospace" font-size="11" fill="#F0F6FC">Alerts · Investigation · Incident response · Rule tuning</text>
+
+  <line x1="600" y1="332" x2="600" y2="352" stroke="#22C55E" stroke-width="2.5" marker-end="url(#arArrowG)"/>
+
+  <text x="600" y="472" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E" font-style="italic">Conceptual architecture — zones, control points and telemetry flow</text>
+</svg>
