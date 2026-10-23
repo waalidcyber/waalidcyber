@@ -1,124 +1,100 @@
-    <linearGradient id="cpS4" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.05"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Monitoring and incident response workflow">
+  <defs>
+    <linearGradient id="supBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
     </linearGradient>
-    <linearGradient id="cpS5" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F0883E" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#F0883E" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="cpS6" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#22C55E" stop-opacity="0.05"/>
-    </linearGradient>
-    <marker id="cpArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <marker id="supArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8B949E"/>
     </marker>
-    <marker id="cpArrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F85149"/>
-    </marker>
   </defs>
-  <rect width="1200" height="360" fill="url(#cpBg)" rx="14" stroke="#30363D"/>
-
-  <text x="30" y="34" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#8B949E" letter-spacing="1">SECURITY &amp; AI DETECTION PIPELINE</text>
+  <rect width="1200" height="320" fill="url(#supBg)" rx="14" stroke="#30363D"/>
+  <text x="30" y="34" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#8B949E" letter-spacing="1">MONITORING WORKFLOW</text>
   <line x1="30" y1="42" x2="1170" y2="42" stroke="#30363D" stroke-width="1"/>
 
-  <!-- ÉTAPE 1 -->
   <g transform="translate(30, 60)">
-    <rect width="170" height="160" rx="12" fill="#1C2128" stroke="#06B6D4" stroke-width="2.5"/>
-    <rect width="170" height="46" rx="12" fill="url(#cpS1)"/>
-    <circle cx="24" cy="24" r="16" fill="#06B6D4"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">1</text>
-    <text x="85" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#06B6D4">DATA</text>
-    <text x="85" y="104" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#06B6D4">COLLECTION</text>
-    <line x1="50" y1="112" x2="120" y2="112" stroke="#06B6D4" stroke-width="1" opacity="0.5"/>
-    <text x="85" y="128" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Raw logs</text>
-    <text x="85" y="144" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Network flows</text>
-    <text x="85" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">System events</text>
+    <rect width="170" height="150" rx="12" fill="#1C2128" stroke="#58A6FF" stroke-width="2.5"/>
+    <rect width="170" height="44" rx="12" fill="#58A6FF" fill-opacity="0.3"/>
+    <circle cx="24" cy="22" r="15" fill="#58A6FF"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">1</text>
+    <text x="85" y="82" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" font-weight="900" fill="#58A6FF">INFRASTRUCTURE</text>
+    <text x="85" y="97" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#58A6FF">MONITORING</text>
+    <line x1="40" y1="105" x2="130" y2="105" stroke="#58A6FF" stroke-width="1" opacity="0.5"/>
+    <text x="85" y="124" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">VirtualBox · 5 VMs</text>
+    <text x="85" y="142" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Linux · Network</text>
   </g>
-  <line x1="205" y1="140" x2="240" y2="140" stroke="#8B949E" stroke-width="2.5" marker-end="url(#cpArrow)"/>
+  <line x1="205" y1="135" x2="240" y2="135" stroke="#8B949E" stroke-width="2.5" marker-end="url(#supArrow)"/>
 
-  <!-- ÉTAPE 2 -->
   <g transform="translate(245, 60)">
-    <rect width="170" height="160" rx="12" fill="#1C2128" stroke="#F0883E" stroke-width="2.5"/>
-    <rect width="170" height="46" rx="12" fill="url(#cpS2)"/>
-    <circle cx="24" cy="24" r="16" fill="#F0883E"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">2</text>
-    <text x="85" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#F0883E">DATA</text>
-    <text x="85" y="104" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0883E">PREPROCESSING</text>
-    <line x1="50" y1="112" x2="120" y2="112" stroke="#F0883E" stroke-width="1" opacity="0.5"/>
-    <text x="85" y="128" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Normalization</text>
-    <text x="85" y="144" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Cleaning</text>
-    <text x="85" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Enrichment</text>
+    <rect width="170" height="150" rx="12" fill="#1C2128" stroke="#06B6D4" stroke-width="2.5"/>
+    <rect width="170" height="44" rx="12" fill="#06B6D4" fill-opacity="0.3"/>
+    <circle cx="24" cy="22" r="15" fill="#06B6D4"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">2</text>
+    <text x="85" y="82" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" font-weight="900" fill="#06B6D4">METRICS</text>
+    <text x="85" y="97" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="900" fill="#06B6D4">COLLECTION</text>
+    <line x1="40" y1="105" x2="130" y2="105" stroke="#06B6D4" stroke-width="1" opacity="0.5"/>
+    <text x="85" y="124" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Zabbix Agents</text>
+    <text x="85" y="142" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">CPU · RAM · Net</text>
   </g>
-  <line x1="420" y1="140" x2="455" y2="140" stroke="#8B949E" stroke-width="2.5" marker-end="url(#cpArrow)"/>
+  <line x1="420" y1="135" x2="455" y2="135" stroke="#8B949E" stroke-width="2.5" marker-end="url(#supArrow)"/>
 
-  <!-- ÉTAPE 3 -->
   <g transform="translate(460, 60)">
-    <rect width="170" height="160" rx="12" fill="#1C2128" stroke="#F0883E" stroke-width="2.5"/>
-    <rect width="170" height="46" rx="12" fill="url(#cpS3)"/>
-    <circle cx="24" cy="24" r="16" fill="#F0883E"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">3</text>
-    <text x="85" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" font-weight="900" fill="#F0883E">FEATURE</text>
-    <text x="85" y="104" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0883E">EXTRACTION</text>
-    <line x1="50" y1="112" x2="120" y2="112" stroke="#F0883E" stroke-width="1" opacity="0.5"/>
-    <text x="85" y="128" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Extraction</text>
-    <text x="85" y="144" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Selection</text>
-    <text x="85" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Encoding</text>
+    <rect width="160" height="150" rx="12" fill="#1C2128" stroke="#22C55E" stroke-width="2.5"/>
+    <rect width="160" height="44" rx="12" fill="#22C55E" fill-opacity="0.3"/>
+    <circle cx="24" cy="22" r="15" fill="#22C55E"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">3</text>
+    <text x="80" y="84" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#22C55E">ZABBIX</text>
+    <line x1="35" y1="94" x2="125" y2="94" stroke="#22C55E" stroke-width="1" opacity="0.5"/>
+    <text x="80" y="114" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Supervision</text>
+    <text x="80" y="132" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Triggers · Items</text>
+    <text x="80" y="150" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">History</text>
   </g>
-  <line x1="635" y1="140" x2="670" y2="140" stroke="#8B949E" stroke-width="2.5" marker-end="url(#cpArrow)"/>
+  <line x1="625" y1="135" x2="660" y2="135" stroke="#8B949E" stroke-width="2.5" marker-end="url(#supArrow)"/>
 
-  <!-- ÉTAPE 4 -->
-  <g transform="translate(675, 60)">
-    <rect width="170" height="160" rx="12" fill="#1C2128" stroke="#8B5CF6" stroke-width="2.5"/>
-    <rect width="170" height="46" rx="12" fill="url(#cpS4)"/>
-    <circle cx="24" cy="24" r="16" fill="#8B5CF6"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">4</text>
-    <text x="85" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#8B5CF6">ML</text>
-    <text x="85" y="104" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#8B5CF6">DETECTION</text>
-    <line x1="50" y1="112" x2="120" y2="112" stroke="#8B5CF6" stroke-width="1" opacity="0.5"/>
-    <text x="85" y="128" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Isolation Forest</text>
-    <text x="85" y="144" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">One-Class SVM</text>
-    <text x="85" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Autoencoder · LOF</text>
+  <g transform="translate(665, 60)">
+    <rect width="150" height="150" rx="12" fill="#1C2128" stroke="#F0883E" stroke-width="2.5"/>
+    <rect width="150" height="44" rx="12" fill="#F0883E" fill-opacity="0.3"/>
+    <circle cx="24" cy="22" r="15" fill="#F0883E"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">4</text>
+    <text x="75" y="84" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#F0883E">ALERTS</text>
+    <line x1="30" y1="94" x2="120" y2="94" stroke="#F0883E" stroke-width="1" opacity="0.5"/>
+    <text x="75" y="114" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">Notifications</text>
+    <text x="75" y="132" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Thresholds</text>
+    <text x="75" y="150" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Email · Webhook</text>
   </g>
-  <line x1="850" y1="140" x2="885" y2="140" stroke="#8B949E" stroke-width="2.5" marker-end="url(#cpArrow)"/>
+  <line x1="820" y1="135" x2="855" y2="135" stroke="#8B949E" stroke-width="2.5" marker-end="url(#supArrow)"/>
 
-  <!-- ÉTAPE 5 -->
-  <g transform="translate(890, 60)">
-    <rect width="140" height="160" rx="12" fill="#1C2128" stroke="#F0883E" stroke-width="2.5"/>
-    <rect width="140" height="46" rx="12" fill="url(#cpS5)"/>
-    <circle cx="24" cy="24" r="16" fill="#F0883E"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">5</text>
-    <text x="70" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#F0883E">ANOMALY</text>
-    <text x="70" y="104" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F0883E">ANALYSIS</text>
-    <line x1="35" y1="112" x2="105" y2="112" stroke="#F0883E" stroke-width="1" opacity="0.5"/>
-    <text x="70" y="128" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Score computation</text>
-    <text x="70" y="144" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Threshold</text>
-    <text x="70" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Correlation</text>
+  <g transform="translate(860, 60)">
+    <rect width="150" height="150" rx="12" fill="#1C2128" stroke="#8B5CF6" stroke-width="2.5"/>
+    <rect width="150" height="44" rx="12" fill="#8B5CF6" fill-opacity="0.3"/>
+    <circle cx="24" cy="22" r="15" fill="#8B5CF6"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">5</text>
+    <text x="75" y="84" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" font-weight="900" fill="#8B5CF6">AI ANALYSIS</text>
+    <line x1="30" y1="94" x2="120" y2="94" stroke="#8B5CF6" stroke-width="1" opacity="0.5"/>
+    <text x="75" y="114" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#F0F6FC">ML · Detection</text>
+    <text x="75" y="132" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Anomalies</text>
+    <text x="75" y="150" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Correlation</text>
   </g>
-  <line x1="1035" y1="140" x2="1070" y2="140" stroke="#8B949E" stroke-width="2.5" marker-end="url(#cpArrow)"/>
+  <line x1="1015" y1="135" x2="1050" y2="135" stroke="#8B949E" stroke-width="2.5" marker-end="url(#supArrow)"/>
 
-  <!-- ÉTAPE 6 -->
-  <g transform="translate(1075, 60)">
-    <rect width="100" height="160" rx="12" fill="#1C2128" stroke="#22C55E" stroke-width="2.5"/>
-    <rect width="100" height="46" rx="12" fill="url(#cpS6)"/>
-    <circle cx="24" cy="24" r="16" fill="#22C55E"/>
-    <text x="24" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" font-weight="900" fill="#0D1117">6</text>
-    <text x="50" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" font-weight="900" fill="#22C55E">ALERTS</text>
-    <line x1="20" y1="98" x2="80" y2="98" stroke="#22C55E" stroke-width="1" opacity="0.5"/>
-    <text x="50" y="118" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Notification</text>
-    <text x="50" y="136" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Investigation</text>
-    <text x="50" y="154" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Response</text>
+  <g transform="translate(1055, 60)">
+    <rect width="120" height="150" rx="12" fill="#1C2128" stroke="#F0F6FC" stroke-width="2.5"/>
+    <rect width="120" height="44" rx="12" fill="#F0F6FC" fill-opacity="0.2"/>
+    <circle cx="24" cy="22" r="15" fill="#F0F6FC"/>
+    <text x="24" y="28" text-anchor="middle" font-family="ui-monospace, monospace" font-size="15" font-weight="900" fill="#0D1117">6</text>
+    <text x="60" y="84" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" font-weight="900" fill="#F0F6FC">DASHBOARD</text>
+    <line x1="20" y1="94" x2="100" y2="94" stroke="#F0F6FC" stroke-width="1" opacity="0.5"/>
+    <text x="60" y="114" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Visualization</text>
+    <text x="60" y="132" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Flask · React</text>
+    <text x="60" y="150" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#8B949E">Monitoring</text>
   </g>
 
-  <!-- Boucle de rétroaction -->
-  <path d="M 1125 225 L 1125 268 L 115 268 L 115 225" fill="none" stroke="#F85149" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#cpArrowRed)"/>
-  <rect x="470" y="256" width="260" height="26" rx="13" fill="#1C2128" stroke="#F85149" stroke-width="1.5"/>
-  <text x="600" y="273" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#F85149">Feedback loop — alerts &amp; re-tuning</text>
-
-  <g transform="translate(30, 316)">
-    <rect x="0" y="-8" width="14" height="14" rx="3" fill="#06B6D4"/><text x="20" y="3" font-size="10" fill="#8B949E">Data</text>
-    <rect x="100" y="-8" width="14" height="14" rx="3" fill="#F0883E"/><text x="120" y="3" font-size="10" fill="#8B949E">Processing</text>
-    <rect x="215" y="-8" width="14" height="14" rx="3" fill="#8B5CF6"/><text x="235" y="3" font-size="10" fill="#8B949E">ML Detection</text>
-    <rect x="350" y="-8" width="14" height="14" rx="3" fill="#22C55E"/><text x="370" y="3" font-size="10" fill="#8B949E">Alerts</text>
+  <g transform="translate(30, 285)">
+    <rect x="0" y="-8" width="14" height="14" rx="3" fill="#58A6FF"/><text x="20" y="3" font-size="10" fill="#8B949E">Infrastructure</text>
+    <rect x="135" y="-8" width="14" height="14" rx="3" fill="#06B6D4"/><text x="155" y="3" font-size="10" fill="#8B949E">Metrics</text>
+    <rect x="250" y="-8" width="14" height="14" rx="3" fill="#22C55E"/><text x="270" y="3" font-size="10" fill="#8B949E">Supervision</text>
+    <rect x="375" y="-8" width="14" height="14" rx="3" fill="#F0883E"/><text x="395" y="3" font-size="10" fill="#8B949E">Alerts</text>
+    <rect x="480" y="-8" width="14" height="14" rx="3" fill="#8B5CF6"/><text x="500" y="3" font-size="10" fill="#8B949E">AI Analysis</text>
+    <rect x="605" y="-8" width="14" height="14" rx="3" fill="#F0F6FC"/><text x="625" y="3" font-size="10" fill="#8B949E">Visualization</text>
   </g>
 </svg>
