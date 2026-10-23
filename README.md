@@ -1,300 +1,761 @@
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SABRI WALID — GitHub Profile README
+     Scientific / Academic / Engineering Portfolio
+     Single-file version — all graphics inline, no external assets required.
+
+     Palette:
+       #0D1117  background primary
+       #161B22  background secondary
+       #1C2128  technical surface
+       #3FB950  scientific green
+       #39FF88  terminal green
+       #58A6FF  technical blue
+       #79C0FF  discrete cyan
+       #E6EDF3  primary text
+       #8B949E  secondary text
+       #30363D  borders
+
+     GitHub compatibility notes:
+       - Inline SVG is rendered inside Markdown when wrapped in a <div> or
+         used as a block element. GitHub sanitizes <svg> but keeps <rect>,
+         <path>, <circle>, <line>, <text>, <g>, <defs>, <linearGradient>,
+         <radialGradient>, <pattern>, <marker>. No scripts, no CSS.
+       - Animations (<animate>, <animateTransform>) are removed by GitHub
+         sanitizer; this file uses none.
+       - External images are avoided entirely so the README has zero
+         dependency on a banner.svg / pipeline.svg / divider.svg file.
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:0D1117&height=200&section=header&text=SABRI%20WALID&fontSize=60&fontColor=39FF88&fontAlignY=40&desc=NETWORKS%20%7C%20CYBERSECURITY%20%7C%20CLOUD&descAlignY=62&descSize=18&descColor=58A6FF&animation=fadeIn" width="100%"/>
+<!-- ═══════════════════════════════════════════════════════════════════════
+     ZONE A — HEADER BANNER (inline SVG)
+     Name, specialty, subtitle, technical grid, network nodes, data flow.
+     ═══════════════════════════════════════════════════════════════════════ -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="320" role="img" aria-label="SABRI WALID — Networks, Cybersecurity, Cloud">
+  <defs>
+    <linearGradient id="hdrBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="hdrAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39FF88"/>
+      <stop offset="100%" stop-color="#58A6FF"/>
+    </linearGradient>
+    <pattern id="hdrGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363D" stroke-width="0.6" opacity="0.55"/>
+    </pattern>
+    <pattern id="hdrGridFine" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#30363D" stroke-width="0.25" opacity="0.25"/>
+    </pattern>
+    <radialGradient id="hdrGlowG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#39FF88" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#39FF88" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hdrGlowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#hdrBg)"/>
+  <rect width="1200" height="320" fill="url(#hdrGrid)"/>
+  <rect width="1200" height="320" fill="url(#hdrGridFine)"/>
+  <circle cx="150" cy="80" r="220" fill="url(#hdrGlowG)"/>
+  <circle cx="1050" cy="260" r="240" fill="url(#hdrGlowB)"/>
+  <g stroke="#39FF88" stroke-width="1" fill="none" opacity="0.85">
+    <line x1="60" y1="60" x2="140" y2="120"/>
+    <line x1="140" y1="120" x2="90" y2="200"/>
+    <line x1="140" y1="120" x2="230" y2="90"/>
+    <line x1="230" y1="90" x2="280" y2="180"/>
+    <line x1="90" y1="200" x2="180" y2="250"/>
+    <line x1="180" y1="250" x2="280" y2="180"/>
+  </g>
+  <g fill="#39FF88">
+    <circle cx="60" cy="60" r="3.5"/>
+    <circle cx="140" cy="120" r="4.5"/>
+    <circle cx="90" cy="200" r="3.5"/>
+    <circle cx="230" cy="90" r="4"/>
+    <circle cx="280" cy="180" r="3.5"/>
+    <circle cx="180" cy="250" r="3.5"/>
+  </g>
+  <g stroke="#58A6FF" stroke-width="1" fill="none" opacity="0.75">
+    <line x1="950" y1="70" x2="1040" y2="120"/>
+    <line x1="1040" y1="120" x2="1120" y2="80"/>
+    <line x1="1040" y1="120" x2="1080" y2="210"/>
+    <line x1="1080" y1="210" x2="990" y2="260"/>
+    <line x1="990" y1="260" x2="900" y2="210"/>
+    <line x1="900" y1="210" x2="950" y2="70"/>
+  </g>
+  <g fill="#58A6FF">
+    <circle cx="950" cy="70" r="3.5"/>
+    <circle cx="1040" cy="120" r="4.5"/>
+    <circle cx="1120" cy="80" r="3.5"/>
+    <circle cx="1080" cy="210" r="4"/>
+    <circle cx="990" cy="260" r="3.5"/>
+    <circle cx="900" cy="210" r="3.5"/>
+  </g>
+  <rect x="0" y="0" width="1200" height="2" fill="url(#hdrAccent)" opacity="0.85"/>
+  <rect x="0" y="318" width="1200" height="2" fill="url(#hdrAccent)" opacity="0.85"/>
+  <text x="40" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8B949E" letter-spacing="3">▸ PROFILE · ESTK · UCA · MOROCCO</text>
+  <text x="600" y="150" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="64" font-weight="700" fill="#E6EDF3" letter-spacing="8">SABRI WALID</text>
+  <text x="600" y="196" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="600" fill="#39FF88" letter-spacing="6">NETWORKS · CYBERSECURITY · CLOUD</text>
+  <text x="600" y="226" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#58A6FF" letter-spacing="3">Technical Portfolio | Security Research | Infrastructure</text>
+  <text x="40" y="296" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#8B949E" letter-spacing="2">BACHELOR · RÉSEAUX, CLOUD &amp; CYBERSÉCURITÉ · 2026–2027</text>
+  <text x="1160" y="296" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#8B949E" letter-spacing="2">github.com/waalidcyber</text>
+</svg>
+
+<br/>
+
+<sub>
+  <code>Technical Portfolio</code> &nbsp;·&nbsp;
+  <code>Security Research</code> &nbsp;·&nbsp;
+  <code>Infrastructure</code>
+</sub>
+
+<br/><br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     DIVIDER (inline SVG) — reusable, repeated between sections
+     ═══════════════════════════════════════════════════════════════════════ -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad)" stroke-width="1"/>
+</svg>
 
 </div>
 
-<div align="center">
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE B — PROFESSIONAL OVERVIEW
+     ═══════════════════════════════════════════════════════════════════════════ -->
 
-`[ Bachelor Student · ESTK El Kelâa des Sraghna · Université Cadi Ayyad ]`
-
-</div>
-
-<br>
-
----
-
-<h3 align="center">
-  <samp>› whoami</samp>
-</h3>
-
-<p align="center">
-  Bachelor student at the <b>École Supérieure de Technologie d'El Kelâa des Sraghna</b>, Université Cadi Ayyad, Morocco.
-  <br>
-  Interested in <b>network security</b>, <b>cybersecurity monitoring</b>, <b>threat detection</b> and <b>Cloud Security</b>.
-  <br>
-  Goal: gain practical experience through a cybersecurity internship and build reliable security solutions.
-</p>
-
----
-
-<h3 align="center">
-  <samp>› cat skills.json</samp>
-</h3>
-
-<table align="center">
+<table width="100%">
 <tr>
-<td valign="top" width="50%">
+<td width="60%" valign="top">
 
-**🛡️ Cybersecurity**
+### <samp>› Professional Overview</samp>
 
-![WAF](https://img.shields.io/badge/WAF-39FF88?style=flat-square&labelColor=0D1117&logo=cloudflare&logoColor=39FF88)
-![IDS](https://img.shields.io/badge/IDS-39FF88?style=flat-square&labelColor=0D1117)
-![Security Monitoring](https://img.shields.io/badge/Security%20Monitoring-39FF88?style=flat-square&labelColor=0D1117)
-![Threat Detection](https://img.shields.io/badge/Threat%20Detection-39FF88?style=flat-square&labelColor=0D1117)
-![Web Security](https://img.shields.io/badge/Web%20Security-39FF88?style=flat-square&labelColor=0D1117)
-![SQLi](https://img.shields.io/badge/SQL%20Injection-39FF88?style=flat-square&labelColor=0D1117)
-![XSS](https://img.shields.io/badge/XSS-39FF88?style=flat-square&labelColor=0D1117)
-![OTP](https://img.shields.io/badge/OTP-39FF88?style=flat-square&labelColor=0D1117)
+Bachelor student at the **École Supérieure de Technologie d'El Kelâa des Sraghna**, Université Cadi Ayyad, Morocco.
 
-**🌐 Networks**
+I work at the intersection of **network security**, **cybersecurity monitoring**, **threat detection** and **Cloud Security**. My objective is to gain practical experience through a cybersecurity internship and to build reliable, well-engineered security solutions.
 
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-58A6FF?style=flat-square&labelColor=0D1117)
-![DNS](https://img.shields.io/badge/DNS-58A6FF?style=flat-square&labelColor=0D1117)
-![DHCP](https://img.shields.io/badge/DHCP-58A6FF?style=flat-square&labelColor=0D1117)
-![VLAN](https://img.shields.io/badge/VLAN-58A6FF?style=flat-square&labelColor=0D1117)
-![Routing](https://img.shields.io/badge/Routing-58A6FF?style=flat-square&labelColor=0D1117)
-![Switching](https://img.shields.io/badge/Switching-58A6FF?style=flat-square&labelColor=0D1117)
-![Network Security](https://img.shields.io/badge/Network%20Security-58A6FF?style=flat-square&labelColor=0D1117)
-![Nmap](https://img.shields.io/badge/Nmap-58A6FF?style=flat-square&labelColor=0D1117&logo=nmap&logoColor=58A6FF)
-
-**💻 Programming**
-
-![Python](https://img.shields.io/badge/Python-39FF88?style=flat-square&labelColor=0D1117&logo=python&logoColor=39FF88)
-![PHP](https://img.shields.io/badge/PHP-39FF88?style=flat-square&labelColor=0D1117&logo=php&logoColor=39FF88)
-![HTML5](https://img.shields.io/badge/HTML5-39FF88?style=flat-square&labelColor=0D1117&logo=html5&logoColor=39FF88)
-![CSS3](https://img.shields.io/badge/CSS3-39FF88?style=flat-square&labelColor=0D1117&logo=css3&logoColor=39FF88)
-![SQL](https://img.shields.io/badge/SQL-39FF88?style=flat-square&labelColor=0D1117)
+My background combines **network engineering**, **applied machine learning** and **secure backend development** — a combination I apply to detection, supervision and response problems.
 
 </td>
-<td valign="top" width="50%">
+<td width="40%" valign="top">
 
-**🤖 Machine Learning**
+### <samp>› Profile Card</samp>
 
-![XGBoost](https://img.shields.io/badge/XGBoost-58A6FF?style=flat-square&labelColor=0D1117)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-58A6FF?style=flat-square&labelColor=0D1117&logo=scikitlearn&logoColor=58A6FF)
-![Isolation Forest](https://img.shields.io/badge/Isolation%20Forest-58A6FF?style=flat-square&labelColor=0D1117)
-![One-Class SVM](https://img.shields.io/badge/One--Class%20SVM-58A6FF?style=flat-square&labelColor=0D1117)
-![Autoencoder](https://img.shields.io/badge/Autoencoder-58A6FF?style=flat-square&labelColor=0D1117)
-![LOF](https://img.shields.io/badge/Local%20Outlier%20Factor-58A6FF?style=flat-square&labelColor=0D1117)
-![pandas](https://img.shields.io/badge/pandas-58A6FF?style=flat-square&labelColor=0D1117&logo=pandas&logoColor=58A6FF)
-![NumPy](https://img.shields.io/badge/NumPy-58A6FF?style=flat-square&labelColor=0D1117&logo=numpy&logoColor=58A6FF)
-
-**⚙️ Backend & Databases**
-
-![Flask](https://img.shields.io/badge/Flask-39FF88?style=flat-square&labelColor=0D1117&logo=flask&logoColor=39FF88)
-![REST API](https://img.shields.io/badge/REST%20API-39FF88?style=flat-square&labelColor=0D1117)
-![Flask-SocketIO](https://img.shields.io/badge/Flask--SocketIO-39FF88?style=flat-square&labelColor=0D1117)
-![WebSocket](https://img.shields.io/badge/WebSocket-39FF88?style=flat-square&labelColor=0D1117)
-![MySQL](https://img.shields.io/badge/MySQL-39FF88?style=flat-square&labelColor=0D1117&logo=mysql&logoColor=39FF88)
-
-**🖥️ Tools & Systems**
-
-![Git](https://img.shields.io/badge/Git-58A6FF?style=flat-square&labelColor=0D1117&logo=git&logoColor=58A6FF)
-![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=flat-square&labelColor=0D1117&logo=github&logoColor=58A6FF)
-![Linux](https://img.shields.io/badge/Linux-58A6FF?style=flat-square&labelColor=0D1117&logo=linux&logoColor=58A6FF)
-![Windows](https://img.shields.io/badge/Windows-58A6FF?style=flat-square&labelColor=0D1117&logo=windows&logoColor=58A6FF)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-58A6FF?style=flat-square&labelColor=0D1117&logo=virtualbox&logoColor=58A6FF)
-![Zabbix](https://img.shields.io/badge/Zabbix-58A6FF?style=flat-square&labelColor=0D1117)
+| Field | Value |
+|:------|:------|
+| **Name** | SABRI WALID |
+| **Domain** | Networks · Cybersecurity · Cloud |
+| **Program** | Bachelor — Networks, Cybersecurity & Cloud |
+| **Institution** | ESTK · Université Cadi Ayyad |
+| **Period** | 2026 – 2027 (in progress) |
+| **Focus** | Network Security · SOC · Cloud Security |
+| **Status** | Open to cybersecurity internship |
 
 </td>
 </tr>
 </table>
 
----
+<div align="center">
 
-<h3 align="center">
-  <samp>› ls projects/</samp>
-</h3>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad2)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad2)" stroke-width="1"/>
+</svg>
 
-<table align="center" width="100%">
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE C — CONCEPTUAL PIPELINE (inline SVG)
+     NETWORK INFRASTRUCTURE → DATA COLLECTION → THREAT DETECTION → ANALYSIS → RESPONSE
+     Conceptual diagram of domains of interest — not a deployed system.
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### <samp>› Conceptual Pipeline</samp>
+
+<sub>Domains of interest — conceptual diagram, not a deployed system.</sub>
+
+<br/><br/>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="100%" height="220" role="img" aria-label="Conceptual pipeline: infrastructure, collection, detection, analysis, response">
+  <defs>
+    <linearGradient id="plLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39FF88"/>
+      <stop offset="50%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#39FF88"/>
+    </linearGradient>
+    <linearGradient id="plStage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C2128"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <marker id="plArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#58A6FF"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="220" fill="#0D1117"/>
+  <rect x="0.5" y="0.5" width="1199" height="219" fill="none" stroke="#30363D" stroke-width="1"/>
+  <text x="30" y="30" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8B949E" letter-spacing="3">▸ CONCEPTUAL PIPELINE · DOMAINS OF INTEREST</text>
+  <line x1="100" y1="110" x2="1100" y2="110" stroke="url(#plLine)" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#plArrow)"/>
+  <g>
+    <rect x="60" y="70" width="160" height="80" rx="6" fill="url(#plStage)" stroke="#39FF88" stroke-width="1.2"/>
+    <text x="140" y="100" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#39FF88" letter-spacing="1">01</text>
+    <text x="140" y="120" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">NETWORK</text>
+    <text x="140" y="136" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">INFRASTRUCTURE</text>
+  </g>
+  <g>
+    <rect x="280" y="70" width="160" height="80" rx="6" fill="url(#plStage)" stroke="#58A6FF" stroke-width="1.2"/>
+    <text x="360" y="100" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#58A6FF" letter-spacing="1">02</text>
+    <text x="360" y="120" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">DATA</text>
+    <text x="360" y="136" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">COLLECTION</text>
+  </g>
+  <g>
+    <rect x="500" y="70" width="160" height="80" rx="6" fill="url(#plStage)" stroke="#39FF88" stroke-width="1.2"/>
+    <text x="580" y="100" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#39FF88" letter-spacing="1">03</text>
+    <text x="580" y="120" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">THREAT</text>
+    <text x="580" y="136" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">DETECTION</text>
+  </g>
+  <g>
+    <rect x="720" y="70" width="160" height="80" rx="6" fill="url(#plStage)" stroke="#79C0FF" stroke-width="1.2"/>
+    <text x="800" y="100" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#79C0FF" letter-spacing="1">04</text>
+    <text x="800" y="120" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">ANALYSIS</text>
+  </g>
+  <g>
+    <rect x="940" y="70" width="160" height="80" rx="6" fill="url(#plStage)" stroke="#39FF88" stroke-width="1.2"/>
+    <text x="1020" y="100" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#39FF88" letter-spacing="1">05</text>
+    <text x="1020" y="120" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#E6EDF3">RESPONSE</text>
+  </g>
+  <g fill="#0D1117" stroke="#58A6FF" stroke-width="1.2">
+    <circle cx="240" cy="110" r="4"/>
+    <circle cx="460" cy="110" r="4"/>
+    <circle cx="680" cy="110" r="4"/>
+    <circle cx="900" cy="110" r="4"/>
+  </g>
+  <text x="30" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#8B949E" letter-spacing="2">CONCEPTUAL DIAGRAM · NOT A DEPLOYED SYSTEM · FOR ILLUSTRATION ONLY</text>
+</svg>
+
+</div>
+
+<div align="center">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad3)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad3)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE D — TECHNICAL DOMAINS
+     Six groups: Cybersecurity, Networks, Programming, ML, Backend & DB, Tools.
+     Each group rendered as a small HTML table for clean alignment.
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+### <samp>› Technical Domains</samp>
+
+<br/>
+
+<table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ Banking Anomaly Detection
+#### 🛡️ Cybersecurity
+
+| Domain | Coverage |
+|:-------|:---------|
+| Perimeter | `WAF` · `IDS` |
+| Monitoring | `Security Monitoring` · `Threat Detection` |
+| Web | `Web Security` · `SQL Injection` · `XSS` |
+| Authentication | `OTP` |
+
+</td>
+<td width="50%" valign="top">
+
+#### 🌐 Networks
+
+| Domain | Coverage |
+|:-------|:---------|
+| Protocols | `TCP/IP` · `DNS` · `DHCP` |
+| Segmentation | `VLAN` |
+| Operations | `Routing` · `Switching` |
+| Security | `Network Security` · `Nmap` |
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 💻 Programming
+
+| Language | Usage |
+|:---------|:------|
+| `Python` | Tooling · ML · Backend |
+| `PHP` | Web development |
+| `HTML5` | Interface structure |
+| `CSS3` | Interface styling |
+| `SQL` | Data querying |
+
+</td>
+<td width="50%" valign="top">
+
+#### 🤖 Machine Learning
+
+| Component | Role |
+|:----------|:-----|
+| `XGBoost` | Supervised detection |
+| `scikit-learn` | ML pipeline |
+| `Isolation Forest` | Unsupervised anomaly detection |
+| `One-Class SVM` | Boundary detection |
+| `Autoencoder` | Reconstruction-based detection |
+| `Local Outlier Factor` | Density-based detection |
+| `pandas` · `NumPy` | Data processing |
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### ⚙️ Backend & Databases
+
+| Component | Role |
+|:----------|:-----|
+| `Flask` | Application server |
+| `REST API` | Service interface |
+| `Flask-SocketIO` · `WebSocket` | Real-time channel |
+| `MySQL` | Relational storage |
+
+</td>
+<td width="50%" valign="top">
+
+#### 🖥️ Tools & Systems
+
+| Tool | Role |
+|:-----|:-----|
+| `Git` · `GitHub` | Version control |
+| `Linux` · `Windows` | Operating systems |
+| `VirtualBox` | Virtual lab |
+| `Zabbix` | Monitoring |
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad4)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad4)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE E — FEATURED PROJECTS
+     Six project cards, each with: id, title, description, stack, features,
+     optional screenshot slot.
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+### <samp>› Featured Projects</samp>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+#### `01` — Banking Anomaly Detection
+
 > Detection of anomalous banking transactions using Python, Flask and Machine Learning.
 
 **Stack**
-![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=39FF88)
-![Flask](https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=39FF88)
-![ML](https://img.shields.io/badge/Machine%20Learning-0D1117?style=flat-square&logoColor=58A6FF)
+`Python` · `Flask` · `Machine Learning`
 
-**Reported F1-score:** `0.9632`
+**Reported metric**
+F1-score (declared): `0.9632`
+
+**Scope**
+- Transaction anomaly detection
+- Flask-based inference service
+
+<sub>*Screenshot slot (optional):* `assets/projects/banking.png`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🔐 NeuroSecure
-> Cybersecurity project developed during a technical internship at **MORITSOFT**.
+#### `02` — NeuroSecure
+
+> Cybersecurity project developed in the context of a technical internship at **MORITSOFT**.
 
 **Stack**
-![Flask](https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=39FF88)
-![WAF](https://img.shields.io/badge/WAF-0D1117?style=flat-square&logoColor=58A6FF)
-![IDS](https://img.shields.io/badge/IDS-0D1117?style=flat-square&logoColor=58A6FF)
-![OTP](https://img.shields.io/badge/OTP-0D1117?style=flat-square&logoColor=58A6FF)
-![XGBoost](https://img.shields.io/badge/XGBoost-0D1117?style=flat-square&logoColor=58A6FF)
+`Flask` · `WAF` · `IDS` · `OTP` · `XGBoost`
 
-**Features:** SQL injection & XSS detection, logging, temporary IP blocking, behavioral detection.
+**Features**
+- SQL Injection & XSS detection
+- Event logging
+- Temporary IP blocking
+- Behavioral detection
+
+<sub>*Screenshot slot (optional):* `assets/projects/neurosecure.png`</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🏭 Menara CyberShield
+#### `03` — Menara CyberShield
+
 > Project developed during an internship at **Ménara Préfa**.
 
 **Stack**
-![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=39FF88)
-![PySide6](https://img.shields.io/badge/PySide6-0D1117?style=flat-square&logo=qt&logoColor=39FF88)
+`Python` · `PySide6`
 
-**Features:** Industrial cybersecurity, inventory management, truck tracking, dashboards, reporting.
+**Features**
+- Industrial cybersecurity
+- Inventory management
+- Truck tracking
+- Dashboards & reporting
+
+<sub>*Screenshot slot (optional):* `assets/projects/menara.png`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🧩 Multi-Module Cybersecurity Platform
+#### `04` — Multi-Module Cybersecurity Platform
+
 > Python & Flask platform combining several cybersecurity functions.
 
 **Stack**
-![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=39FF88)
-![Flask](https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=39FF88)
+`Python` · `Flask`
 
-**Features:** Ten modules, AI chatbot, AES-256 encryption, real-time monitoring, IP blocking.
+**Features**
+- Ten modules
+- AI chatbot
+- AES-256 encryption
+- Real-time monitoring
+- IP blocking
+
+<sub>*Screenshot slot (optional):* `assets/projects/platform.png`</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🕵️ CyberGuard
+#### `05` — CyberGuard
+
 > Web prototype focused on cybersecurity and access management.
 
-**Features:** Network scanning, log auditing, secure authentication, anti-intrusion mechanisms.
+**Features**
+- Network scanning
+- Log auditing
+- Secure authentication
+- Anti-intrusion mechanisms
+
+<sub>*Screenshot slot (optional):* `assets/projects/cyberguard.png`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 📊 Intelligent Monitoring with Zabbix & AI
+#### `06` — Intelligent Monitoring with Zabbix & AI
+
 > Virtual lab using five VirtualBox machines for infrastructure monitoring and intelligent analysis.
 
 **Stack**
-![Zabbix](https://img.shields.io/badge/Zabbix-0D1117?style=flat-square&logoColor=39FF88)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-0D1117?style=flat-square&logo=virtualbox&logoColor=58A6FF)
-![ML](https://img.shields.io/badge/Machine%20Learning-0D1117?style=flat-square&logoColor=58A6FF)
-![Flask](https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=39FF88)
-![React](https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=58A6FF)
+`Zabbix` · `VirtualBox` · `Machine Learning` · `Flask` · `React`
 
-**Features:** Network monitoring, dashboard-based visualization.
+**Features**
+- Network monitoring
+- Dashboard-based visualization
 
-</td>
-</tr>
-</table>
-
-> Project repositories and screenshots will be linked here after their availability and contents have been verified.
-
----
-
-<h3 align="center">
-  <samp>› cat education.log</samp>
-</h3>
-
-<table align="center" width="100%">
-<tr>
-<td width="50%" valign="top">
-
-**🎓 Bachelor — Networks, Cybersecurity and Cloud**
-École Supérieure de Technologie d'El Kelâa des Sraghna
-Université Cadi Ayyad
-`2026 – 2027` · *In progress*
-
-</td>
-<td width="50%" valign="top">
-
-**🎓 DUT — Networks, Cybersecurity and Artificial Intelligence**
-École Supérieure de Technologie d'El Kelâa des Sraghna
-Université Cadi Ayyad
-`2024 – 2026` · *Honours: Bien*
-
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-
-**🎓 Baccalaureate — Physical Sciences**
-`2023`
+<sub>*Screenshot slot (optional):* `assets/projects/zabbix.png`</sub>
 
 </td>
 </tr>
 </table>
 
----
-
-<h3 align="center">
-  <samp>› cat experience.log</samp>
-</h3>
-
-**🧪 Technical Intern — MORITSOFT**
-`April 2026 – June 2026`
-Worked on a cybersecurity project involving web application protection, intrusion detection and behavioral analysis.
-
-**🏭 Intern — Ménara Préfa**
-`June 2025 – July 2025`
-Contributed to a Python and PySide6 project involving industrial cybersecurity and operational monitoring.
-
----
-
-<h3 align="center">
-  <samp>› cat training.log</samp>
-</h3>
-
-- Introduction to Python Programming — **Edraak**
-- Introduction to Cybersecurity — **Edraak**, 2025
-- Hacking and Security — **MindLuster**, 2025
-- JavaScript for Beginners — **Cursa / Traversy Media**, 2025
-
----
-
-<h3 align="center">
-  <samp>› cat languages.log</samp>
-</h3>
-
-<p align="center">
-
-![Arabic](https://img.shields.io/badge/Arabic-39FF88?style=for-the-badge&labelColor=0D1117)
-![French](https://img.shields.io/badge/French-58A6FF?style=for-the-badge&labelColor=0D1117)
-![English](https://img.shields.io/badge/English-39FF88?style=for-the-badge&labelColor=0D1117)
-
-</p>
-
----
-
-<h3 align="center">
-  <samp>› ./contact.sh</samp>
-</h3>
-
-<p align="center">
-
-<a href="https://github.com/waalidcyber">
-  <img src="https://img.shields.io/badge/GitHub-waalidcyber-0D1117?style=for-the-badge&logo=github&logoColor=39FF88&labelColor=161B22" alt="GitHub"/>
-</a>
-<a href="https://www.linkedin.com/in/walid-sabri-b01412358/">
-  <img src="https://img.shields.io/badge/LinkedIn-Walid%20Sabri-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF&labelColor=161B22" alt="LinkedIn"/>
-</a>
-<a href="mailto:w.sabri3107@uca.ac.ma">
-  <img src="https://img.shields.io/badge/Email-w.sabri3107@uca.ac.ma-0D1117?style=for-the-badge&logo=gmail&logoColor=39FF88&labelColor=161B22" alt="Email"/>
-</a>
-
-</p>
-
----
-
-<p align="center">
-  <i>Interested in cybersecurity, network defense, security monitoring and Cloud Security.</i>
-</p>
+> **Note** — Project repositories and screenshots will be linked here after their availability and contents have been verified. No repository URL or performance figure is published unless it is publicly verifiable.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:0D1117&height=120&section=footer" width="100%"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad5)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad5)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE F — ENGINEERING EXPERIENCE
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+### <samp>› Engineering Experience</samp>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="25%" valign="top"><b>Period</b></td>
+<td width="35%" valign="top"><b>Organization</b></td>
+<td width="40%" valign="top"><b>Mission</b></td>
+</tr>
+<tr>
+<td valign="top"><code>Apr 2026 – Jun 2026</code></td>
+<td valign="top"><b>MORITSOFT</b><br/><sub>Technical Intern</sub></td>
+<td valign="top">Cybersecurity project involving web application protection, intrusion detection and behavioral analysis.</td>
+</tr>
+<tr>
+<td valign="top"><code>Jun 2025 – Jul 2025</code></td>
+<td valign="top"><b>Ménara Préfa</b><br/><sub>Intern</sub></td>
+<td valign="top">Python and PySide6 project involving industrial cybersecurity and operational monitoring.</td>
+</tr>
+</table>
+
+<div align="center">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad6)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad6)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE G — ACADEMIC BACKGROUND
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+### <samp>› Academic Background</samp>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="25%" valign="top"><b>Period</b></td>
+<td width="45%" valign="top"><b>Program</b></td>
+<td width="30%" valign="top"><b>Institution</b></td>
+</tr>
+<tr>
+<td valign="top"><code>2026 – 2027</code><br/><sub>In progress</sub></td>
+<td valign="top"><b>Bachelor — Networks, Cybersecurity and Cloud</b></td>
+<td valign="top">École Supérieure de Technologie d'El Kelâa des Sraghna<br/>Université Cadi Ayyad</td>
+</tr>
+<tr>
+<td valign="top"><code>2024 – 2026</code><br/><sub>Honours: Bien</sub></td>
+<td valign="top"><b>DUT — Networks, Cybersecurity and Artificial Intelligence</b></td>
+<td valign="top">École Supérieure de Technologie d'El Kelâa des Sraghna<br/>Université Cadi Ayyad</td>
+</tr>
+<tr>
+<td valign="top"><code>2023</code></td>
+<td valign="top"><b>Baccalaureate — Physical Sciences</b></td>
+<td valign="top">—</td>
+</tr>
+</table>
+
+<br/>
+
+#### Complementary Training
+
+| Course | Provider | Year |
+|:-------|:---------|:-----|
+| Introduction to Python Programming | Edraak | — |
+| Introduction to Cybersecurity | Edraak | 2025 |
+| Hacking and Security | MindLuster | 2025 |
+| JavaScript for Beginners | Cursa / Traversy Media | 2025 |
+
+<br/>
+
+#### Languages
+
+| Language | Level |
+|:---------|:------|
+| Arabic | Native |
+| French | Professional |
+| English | Professional |
+
+<div align="center">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad7)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad7)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ZONE H — CONTACT
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+### <samp>› Contact</samp>
+
+<br/>
+
+<table width="100%">
+<tr>
+<td align="center" width="33%">
+
+**GitHub**
+
+[waalidcyber](https://github.com/waalidcyber)
+
+</td>
+<td align="center" width="33%">
+
+**LinkedIn**
+
+[Walid Sabri](https://www.linkedin.com/in/walid-sabri-b01412358/)
+
+</td>
+<td align="center" width="33%">
+
+**Email**
+
+[w.sabri3107@uca.ac.ma](mailto:w.sabri3107@uca.ac.ma)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<br/>
+
+*Interested in cybersecurity, network defense, security monitoring and Cloud Security.*
+
+<br/>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="dvGrad8" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#39FF88" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#30363D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="40" y1="12" x2="560" y2="12" stroke="url(#dvGrad8)" stroke-width="1"/>
+  <circle cx="600" cy="12" r="4" fill="#0D1117" stroke="#39FF88" stroke-width="1.4"/>
+  <circle cx="600" cy="12" r="1.4" fill="#39FF88"/>
+  <line x1="580" y1="12" x2="592" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="608" y1="12" x2="620" y2="12" stroke="#58A6FF" stroke-width="1"/>
+  <line x1="640" y1="12" x2="1160" y2="12" stroke="url(#dvGrad8)" stroke-width="1"/>
+</svg>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FOOTER NOTE
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<sub>
+  <code>SABRI WALID</code> &nbsp;·&nbsp;
+  <code>ESTK · Université Cadi Ayyad</code> &nbsp;·&nbsp;
+  <code>2026 – 2027</code>
+</sub>
+
+<br/><br/>
+
+<sub>
+  Designed as a single-file GitHub Profile README.
+  All graphics are inline SVG — no external asset dependency.
+</sub>
 
 </div>
