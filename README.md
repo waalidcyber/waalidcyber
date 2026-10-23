@@ -6,7 +6,7 @@
 
 **Building secure systems. Exploring intelligent cybersecurity.**
 
-[![GitHub](https://img.shields.io/badge/GitHub-waalidcyber-161B22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/waalidcyber)
+[![GitHub](https://img.shields.io/badge/GitHub-waalidcyber-0D1117?style=for-the-badge&logo=github&logoColor=F0F6FC)](https://github.com/waalidcyber)
 [![Networks](https://img.shields.io/badge/Networks-2563EB?style=for-the-badge)](https://github.com/waalidcyber)
 [![Cloud](https://img.shields.io/badge/Cloud-06B6D4?style=for-the-badge)](https://github.com/waalidcyber)
 [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-22C55E?style=for-the-badge)](https://github.com/waalidcyber)
@@ -99,18 +99,24 @@ A web application project using modern frontend and backend technologies.
 
 ---
 
-## CYBERSECURITY WORKFLOW
+## NETWORK & SECURITY ARCHITECTURE
 
 ```mermaid
 flowchart TD
-    A[Network & Systems] --> B[Logs & Data Collection]
-    B --> C[Security Analysis<br/>Rules + ML Models]
-    C --> D[Detection & Alerts]
-    D --> E[Monitoring & Investigation]
-    E -->|Feedback| C
+    I[Internet] --> F[Firewall]
+    F --> N[Internal Network]
+    N --> S[Servers]
+    N --> L[Log Collection]
+    L --> M[Security Monitoring]
+    M --> A[Alert Analysis]
+    A --> R[Incident Response]
+    R -->|Feedback| M
 
-    style A fill:#2563EB,stroke:#2563EB,color:#F0F6FC
-    style B fill:#06B6D4,stroke:#06B6D4,color:#0D1117
-    style C fill:#F0883E,stroke:#F0883E,color:#0D1117
-    style D fill:#22C55E,stroke:#22C55E,color:#0D1117
-    style E fill:#8B5CF6,stroke:#8B5CF6,color:#F0F6FC
+    style I fill:#58A6FF,stroke:#58A6FF,color:#0D1117
+    style F fill:#F0883E,stroke:#F0883E,color:#0D1117
+    style N fill:#2563EB,stroke:#2563EB,color:#F0F6FC
+    style S fill:#2563EB,stroke:#2563EB,color:#F0F6FC
+    style L fill:#06B6D4,stroke:#06B6D4,color:#0D1117
+    style M fill:#06B6D4,stroke:#06B6D4,color:#0D1117
+    style A fill:#22C55E,stroke:#22C55E,color:#0D1117
+    style R fill:#8B5CF6,stroke:#8B5CF6,color:#F0F6FC
